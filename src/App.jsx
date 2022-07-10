@@ -61,6 +61,7 @@ function App() {
             }, 5000);
           })
           .catch((exception) => {
+            console.log(exception);
             setNotification({
               message: exception,
               error: true,
@@ -101,7 +102,7 @@ function App() {
       })
       .catch((exception) => {
         setNotification({
-          message: exception,
+          message: exception.response.data.error,
           error: true,
         });
         setTimeout(() => {

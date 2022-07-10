@@ -40,5 +40,6 @@
   "devDependencies": {
     "json-server": "^0.17.0",
     "prettier": "^2.7.1"
-  }
+  },
+  "proxy": "http://localhost:3001"
 }
